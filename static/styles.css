@@ -83,5 +83,5 @@ body {
 ul, li {
   list-style: none;
   max-height: 80vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
