@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+    <link rel="stylesheet" href="/static/styles.css">
+  </head>
+  <body>
+    <div class="sidebar">
+      <h3 class="sidebar_heading">Pings</h3>
+      <hr>
+      <ul class="notifs">
+        <li class="notif" id="notif"> You joined </li>
+      </ul>
+    </div>
+    <div class="msg">
+        <h3 class="msg_heading">Messages</h3>
+        <ul id="messages">
+          <li>Hey you can send group messages here!</li>
+          <li>Just type in the box and hit enter</li>
+        </ul>
+        <form class="msg_form" action="">
+          <input class="msg_input" id="m" autocomplete="off" autofocus="true" placeholder="Type the message and hit enter!" />
+        </form>
+    </div>
+
+  </body>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="static/script.js"></script>
+</html>

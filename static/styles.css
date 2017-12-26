@@ -1,0 +1,87 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* variables */
+  --black: #454545;
+  --whiteIsh: #f3f5f7;
+  --grey: #ababab;
+}
+
+/* sidebar */
+/* mobile first view */
+.sidebar {
+  width: 0;
+  height: 100vh;
+  background: var(--black);
+  color: var(--whiteIsh);
+}
+
+@media screen and (min-width: 480px) {
+  .sidebar {
+    width: 20vw;
+  }
+}
+
+.sidebar_heading, .msg_heading {
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 4px;
+  font-weight: 300;
+}
+
+.msg {
+  width: 100%;
+  height: 100%;
+}
+
+/* form */
+.msg_form {
+  position: absolute;
+  bottom: 0;
+  width: 80vw;
+}
+
+.msg_form .msg_input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 0.7rem;
+  border: solid 1px var(--black);
+  margin: 2px;
+}
+
+#messages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#messages li {
+  border: solid 1px var(--grey);
+  color: var(--black);
+  padding: 2px 8px;
+  margin: 8px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.notifs {
+  width: 100%;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  max-height: 100%;
+  overflow-y: auto;
+}
