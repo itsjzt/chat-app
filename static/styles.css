@@ -80,8 +80,8 @@ body {
   text-align: center;
 }
 
-ul {
+ul, li {
   list-style: none;
-  max-height: 100%;
-  overflow-y: auto;
+  max-height: 80vh;
+  overflow-y: scroll;
 }
