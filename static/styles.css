@@ -65,13 +65,12 @@ body {
 }
 
 #messages li {
-  position: absolute;
-  left: 25%;
   border: solid 1px var(--grey);
   color: var(--black);
   padding: 2px 8px;
-  margin: 8px;
+  margin: auto;
   width: 50%;
+  min-height: 1.5rem;
   border-radius: 10px;
 }
 
