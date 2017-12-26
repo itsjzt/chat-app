@@ -65,10 +65,11 @@ body {
 }
 
 #messages li {
-  border: solid 1px var(--grey);
+  background: #ededed;
   color: var(--black);
   padding: 2px 8px;
   margin: auto;
+  margin-bottom: 4px;
   width: 50%;
   min-height: 1.5rem;
   border-radius: 10px;
