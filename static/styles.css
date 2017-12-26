@@ -85,3 +85,7 @@ ul, li {
   max-height: 80vh;
   overflow-y: auto;
 }
+
+li {
+  min-height: 1.5rem;
+}
